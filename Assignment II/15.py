@@ -3,11 +3,11 @@
 # would she have?
 
 class Customer:
-    def __init__(self):
-        self.balance = 5000
-        self.account_no = '01992309913'
-        self.full_name = 'ABC XYZ'
-        self.account_type = 'savings'
+    def __init__(self, balance, account_no, full_name, account_type):
+        self.balance = balance
+        self.account_no = account_no
+        self.full_name = full_name
+        self.account_type = account_type
 
     def deposit(self):
         amount = float(input("Enter amount to be Deposited: "))
@@ -30,7 +30,7 @@ class Customer:
         print("\n Net Available Balance=", self.balance)
 
 
-s = Customer()
+s = Customer(5000, '01992309913', 'ABC XYZ', 'savings')
 
 s.deposit()
 s.withdraw()
