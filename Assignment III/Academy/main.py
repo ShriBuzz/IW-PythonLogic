@@ -40,17 +40,17 @@ def clear_screen():
 acadamy = Academy()
 
 clear_screen()
-print('Select what you want to do. \n1) Login \n2) Signup')
+print('Select what you want to do. \n1) Signup \n2) Login')
 startChoice = int(input('Enter your Choice: '))
 if startChoice == 1:
     clear_screen()
-    print("LOGIN\n\n")
+    print("Signup\n\n")
     name = input("Enter your name: ")
     student = Student(name)
 
 elif startChoice == 2:
     clear_screen()
-    print("Signup\n\n")
+    print("Login\n\n")
     roll = int(input("Enter your roll: "))
     student = Student()
     student.set_student(acadamy.get_student_from_roll(roll))
